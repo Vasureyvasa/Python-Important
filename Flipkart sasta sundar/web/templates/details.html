@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <link rel="stylesheet" href="/web/style/style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Order Details for "<span id="orderIdDisplay"></span>"</h1>
+        <p>View detailed status of all stations associated with Order ID <span id="orderIdDisplay"></span></p>
+    </header>
+
+    <section class="table-container">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Station ID</th>
+                    <th>Dispatch Status</th>
+                </tr>
+            </thead>
+            <tbody id="stationTableBody">
+                <!-- Table rows will be dynamically generated here -->
+            </tbody>
+        </table>
+    </section>
+    <button onclick="goBack()" class="button-primary back-button">Back to Overview</button>
+
+
+
+</div>
+
+<script src="/web/script/scripts.js"></script>
+</body>
+</html>

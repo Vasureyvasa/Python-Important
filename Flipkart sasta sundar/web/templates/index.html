@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Overview</title>
+    <link rel="stylesheet" href="/web/style/style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>FLIPKART STORE</h1>
+        <p>Review and manage your orders with easy filters and detailed views.</p>
+    </header>
+
+    <section class="filters">
+        <input type="text" id="orderIdFilter" placeholder="Filter by Order ID">
+        <select id="statusFilter">
+            <option value="Under Process">Under Process</option>
+            <option value="Done">Done</option>
+            <option value="InActive">InActive</option>
+        </select>
+        <button onclick="applyFilter()" class="button-primary">Search</button>
+        <button onclick="resetFilter()" class="button-secondary">Reset</button>
+    </section>
+
+    <section class="table-container">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Order ID</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="orderTableBody">
+                <!-- Table rows will be dynamically generated here -->
+            </tbody>
+        </table>
+    </section>
+</div>
+
+<script src="/web/script/scripts.js"></script>
+</body>
+</html>
